@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dilli Explorer | Discover Delhi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">🏛️ DILLI EXPLORER</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#places">Explore</a>
+    <a href="#planner">Trip Planner</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">DISCOVER THE HEART OF INDIA</p>
+    <h1>Explore Delhi.<br><span>Experience History.</span></h1>
+    <p>Discover iconic monuments, hidden gems and unforgettable experiences in India's capital.</p>
+    <a href="#places" class="main-btn">Explore Destinations →</a>
+  </div>
+</section>
+
+<section class="intro">
+  <p class="tag">YOUR LOCAL TRAVEL COMPANION</p>
+  <h2>Discover the Magic of Delhi</h2>
+  <p>Find destinations, explore local culture and plan your perfect Delhi trip in one place.</p>
+</section>
+
+<section class="places" id="places">
+  <h2>Explore Popular Destinations</h2>
+  <p>Find your next favourite destination.</p>
+
+  <input id="search" type="text" placeholder="Search destinations...">
+
+  <select id="category">
+    <option value="all">All Categories</option>
+    <option value="History">Historical</option>
+    <option value="Culture">Culture</option>
+    <option value="Nature">Nature</option>
+    <option value="Spiritual">Spiritual</option>
+  </select>
+
+  <div id="place-list" class="place-grid"></div>
+</section>
+
+<section class="planner" id="planner">
+  <p class="tag">PLAN SMARTER</p>
+  <h2>Build Your Delhi Trip</h2>
+  <p>Tell us your budget and available time. We will suggest places to visit.</p>
+
+  <label>Available Budget (₹)</label>
+  <input type="number" id="budget" value="1000" min="0">
+
+  <label>Available Time</label>
+  <select id="hours">
+    <option value="3">3 Hours</option>
+    <option value="5">5 Hours</option>
+    <option value="8">8 Hours</option>
+  </select>
+
+  <button class="main-btn" onclick="makePlan()">Generate My Trip</button>
+
+  <div id="plan-result"></div>
+</section>
+
+<section class="about" id="about">
+  <h2>Why Dilli Explorer?</h2>
+  <p>Our mission is to make Delhi tourism easier, smarter and more accessible. We help travellers discover famous attractions and lesser-known places while supporting local culture.</p>
+  <div class="features">
+    <div>📍 Smart Destination Discovery</div>
+    <div>🗺️ Google Maps Directions</div>
+    <div>💰 Budget-Friendly Planning</div>
+    <div>❤️ Save Favourite Places</div>
+  </div>
+</section>
+
+<footer>
+  <h2>🏛️ DILLI EXPLORER</h2>
+  <p>Discover Delhi. Experience More.</p>
+  <p>Made for Local Tourism | Hackathon 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
